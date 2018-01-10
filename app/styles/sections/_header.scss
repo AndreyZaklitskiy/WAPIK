@@ -1,0 +1,116 @@
+header {
+  position: relative;
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  .container {
+    position: relative;
+    z-index: 2;
+    height: 660px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background-color: #2d6e70;
+  }
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 85px;
+
+  .logo {
+    display: inline;
+    text-transform: uppercase;
+    font-family: $proximanovabold;
+    font-size: 29px;
+    color: #fff;
+    padding-right: 24px;
+    border-right: 1px solid #fff;
+  }
+  .phone {
+    display: inline-block;
+    font-family: $montserratregular;
+    font-size: 13px;
+    color: #fff;
+    margin-left: 24px;
+    margin-right: auto;
+    &::before {
+      content: '';
+      display: inline-block;
+      @include sprite($phone);
+    }
+  }
+}
+.header-menu-item {
+  display: inline-block;
+  margin-right: 30px;
+  a {
+    text-transform: uppercase;
+    font-family: $montserratregular;
+    font-size: 12px;
+    color: #fff;
+    &:hover {
+      color: $txt-color;
+    }
+  }
+}
+.btn-start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 110px;
+  color: #fff;
+  background-color: #697E7F;
+  font-family: $montserratregular;
+  font-size: 12px;
+  border-radius: 2px;
+  &:hover {
+    background-color: $green;
+  }
+}
+
+.header-body {
+  height: 575px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  h1 {
+    font-size: 38px;
+    font-family: $robotoregular;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+    color: #fff;
+    font-family: $robotoregular;
+    width: 500px;
+    margin-bottom: 25px;
+    line-height: 140%;
+  }
+  .btn-learn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: $montserratregular;
+    font-size: 14px;
+    height: 50px;
+    width: 185px;
+    background-color: $green;
+    border-radius: 2px;
+  }
+}
