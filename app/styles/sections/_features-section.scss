@@ -1,0 +1,139 @@
+.features-section .container {
+  padding-top: 90px;
+  padding-bottom: 125px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .features-section-header {
+    position: relative;
+    display: block;
+    font-family: $robotolight;
+    font-size: 32px;
+    color: $headers-color;
+    margin-bottom: 20px;
+    &::after {
+      content: '';
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      width: 65px;
+      height: 1px;
+      background-color: $green;
+      margin-top: 20px;
+    }
+  }
+  .features-section-txt {
+    max-width: 460px;
+    color: $txt-color;
+    font-size: 15px;
+    font-family: $robotoregular;
+    text-align: center;
+  }
+}
+
+.features-block-1 {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  padding-top: 40px;
+  margin-bottom: 140px;
+}
+.feature {
+  h3 {
+    text-align: center;
+    font-family: $robotoregular;
+    font-size: 16px;
+    color: $headers-color;
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+  p {
+    text-align: center;
+    font-size: 14px;
+    font-family: $robotoregular;
+    color: $txt-color;
+    line-height: 150%;
+  }
+}
+.feature-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 30px;
+}
+.feature1 {
+  &:before {
+    content: '';
+    display: inline-block;
+    @include sprite($lonicons-icon);
+  }
+}
+.feature2 {
+  &:before {
+    content: '';
+    display: inline-block;
+    @include sprite($flask-icon);
+  }
+}
+.feature3 {
+  &:before {
+    content: '';
+    display: inline-block;
+    @include sprite($sketch-icon);
+  }
+}
+
+.features-block-2 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.feature-2 {
+  width: 485px;
+  margin-bottom: 60px;
+  h3 {
+    display: inline-block;
+    text-align: left;
+  }
+  p {
+    text-align: left;
+  }
+}
+
+.feature2-1 {
+  &:before {
+    content: '';
+    display: inline-block;
+    @include sprite($browser-icon);
+    margin-right: 20px;
+  }
+}
+.feature2-2 {
+  &:before {
+    content: '';
+    display: inline-block;
+    @include sprite($bulb-icon);
+    margin-right: 20px;
+  }
+}
+.feature2-3 {
+  &:before {
+    content: '';
+    display: inline-block;
+    @include sprite($mstick-icon);
+    margin-right: 20px;
+  }
+}
+.feature2-4 {
+  &:before {
+    content: '';
+    display: inline-block;
+    @include sprite($cloud-icon);
+    margin-right: 20px;
+  }
+}
