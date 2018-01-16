@@ -22,6 +22,7 @@ header {
     background-color: #2d6e70;
   }
 }
+
 .header-menu {
   display: flex;
   align-items: center;
@@ -37,20 +38,28 @@ header {
     padding-right: 24px;
     border-right: 1px solid #fff;
   }
-  .phone {
+}
+
+.header-menu-phone {
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  span {
     display: inline-block;
     font-family: $montserratregular;
     font-size: 13px;
     color: #fff;
-    margin-left: 24px;
-    margin-right: auto;
-    &::before {
-      content: '';
-      display: inline-block;
-      @include sprite($phone);
-    }
+    padding-left: 5px;
+  }
+  &::before {
+    content: '';
+    display: inline-block;
+    @include sprite($phone);
   }
 }
+
 .header-menu-item {
   display: inline-block;
   margin-right: 30px;
@@ -64,6 +73,7 @@ header {
     }
   }
 }
+
 .btn-start {
   display: flex;
   align-items: center;

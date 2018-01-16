@@ -15,6 +15,7 @@
 @import "sections/header";
 @import "sections/head-section";
 @import "sections/features-section";
+@import "sections/looking-section";
 
 
 
@@ -40,6 +41,22 @@ body {
   overflow: hidden;
   min-height: 100%;
   line-height: 1.2;
+}
+
+p {
+  font-size: 14px;
+  font-family: $robotoregular;
+  color: $txt-color;
+  line-height: 150%;
+  display: inline-block;
+}
+
+.span-header {
+  display: block;
+  font-family: $robotolight;
+  font-size: 32px;
+  color: $headers-color;
+  text-align: center;
 }
 
 
