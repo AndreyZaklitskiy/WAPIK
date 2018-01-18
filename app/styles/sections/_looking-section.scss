@@ -1,11 +1,14 @@
 .looking-section {
+  position: relative;
   background-color: #eef1ec;
   .container {
     position: relative;
+    overflow: hidden;
     span {
       @extend .span-header;
       margin-top: 76px;
       margin-bottom: 20px;
+      text-align: center;
       &::after {
         content: '';
         display: block;
@@ -23,6 +26,7 @@
       text-align: center;
       font-size: 15px;
       margin-bottom: 20px;
+      line-height: 22px;
     }
   }
 }

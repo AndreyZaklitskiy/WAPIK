@@ -16,6 +16,8 @@
 @import "sections/head-section";
 @import "sections/features-section";
 @import "sections/looking-section";
+@import "sections/director_section";
+@import "sections/attention-section";
 
 
 
@@ -56,7 +58,6 @@ p {
   font-family: $robotolight;
   font-size: 32px;
   color: $headers-color;
-  text-align: center;
 }
 
 
