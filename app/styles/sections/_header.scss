@@ -75,20 +75,9 @@ header {
 }
 
 .btn-start {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ @extend .btn;
   height: 32px;
   width: 110px;
-  color: #fff;
-  text-transform: uppercase;
-  background-color: #697E7F;
-  font-family: $montserratregular;
-  font-size: 12px;
-  border-radius: 2px;
-  &:hover {
-    background-color: $green;
-  }
 }
 
 .header-body {
@@ -97,7 +86,7 @@ header {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  h1 {
+  h2 {
     font-size: 38px;
     font-family: $robotoregular;
     color: #fff;
