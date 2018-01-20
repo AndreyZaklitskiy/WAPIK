@@ -27,6 +27,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   height: 85px;
 
   .logo {
@@ -96,7 +97,7 @@ header {
     font-size: 16px;
     color: #fff;
     font-family: $robotoregular;
-    width: 500px;
+    max-width: 500px;
     margin-bottom: 25px;
     line-height: 140%;
   }
@@ -116,3 +117,6 @@ header {
 }
 
 
+@media (max-width: 992px) {
+
+}

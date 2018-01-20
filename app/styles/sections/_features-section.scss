@@ -1,6 +1,6 @@
 .features-section .container {
-  margin-top: 90px;
-  margin-bottom: 100px;
+  padding-top: 90px;
+  padding-bottom: 100px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -30,10 +30,12 @@
 .features-block-1 {
   position: relative;
   display: flex;
-  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-top: 40px;
 }
 .feature {
+  margin: auto;
   h3 {
     text-align: center;
     font-family: $robotoregular;
@@ -80,12 +82,12 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 20px;
 }
 
 .feature-2 {
-  width: 485px;
+  width: 40%;
   margin-bottom: 60px;
   h3 {
     display: inline-block;
@@ -145,5 +147,25 @@
       width: 2px;
       background-color: #f2f2f2;
     }
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .features-section .container {
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+  .features-block-2 {
+    flex-direction: column;
+  }
+  .feature-1 {
+    margin-bottom: 0px;
+  }
+  .feature-2 {
+    width: 90%;
+    margin-bottom: 15px;
   }
 }
