@@ -35,6 +35,12 @@
       color: #ffff;
       font-size: 13px;
       font-family: $montserratregular;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
     }
   }
 }

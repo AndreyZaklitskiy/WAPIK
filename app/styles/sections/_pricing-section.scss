@@ -55,6 +55,7 @@
 .pricing-plan-block {
   display: flex;
   justify-content: center;
+  width: 100%;
   max-width: 762px;
   border: 1px solid #c1d3d2;
   margin: 0 auto 80px;
@@ -63,7 +64,7 @@
 .plan-block-items {
   border-right: 1px solid #c1d3d2;
   height: 360px;
-  width: 252px;
+  width: 100%;
   max-width: 252px;
   display: flex;
   flex-direction: column;
@@ -127,3 +128,36 @@
 }
 
 
+
+
+
+@media (max-width: 768px) {
+  .pricing-check-block {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+
+
+@media (max-width: 575px) {
+  .pricing-section {
+    .container {
+      padding: 50px 0;
+    }
+  }
+  .pricing-plan-block {
+    flex-direction: column;
+    width: auto;
+  }
+  .plan-block-items {
+    width: 252px;
+    margin-right: auto;
+    margin-left: auto;
+    border-right: none;
+    border-bottom: 1px solid #c1d3d2;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
