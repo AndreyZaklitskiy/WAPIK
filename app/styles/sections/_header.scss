@@ -78,55 +78,85 @@ header {
     }
   }
 
-  .btn-start {
-    @extend .btn;
-    height: 32px;
-    width: 110px;
-  }
+}
+.btn-start {
+  @extend .btn;
+  height: 32px;
+  width: 110px;
 }
 
-.pie-menu {
-
-
-  .burger {
-    height: 3px;
-    width: 30px;
-    background-color: #ffffff;
-    position: relative;
+.hamburger {
+  z-index: 15;
+  position: fixed;
+  display: none;
+  right: 5%;
+  .hamburger-inner {
+    background-color: $headers-color;
     &:before {
-      content: '';
-      display: inline-block;
-      position: absolute;
-      height: 3px;
-      width: 30px;
-      background-color: #ffffff;
-      left: 0;
-      top: 7px;
+      background-color: $headers-color;
     }
     &:after {
-      content: '';
-      display: inline-block;
-      position: absolute;
-      height: 3px;
-      width: 30px;
-      background-color: #ffffff;
-      left: 0;
-      bottom: 7px;
+      background-color: $headers-color;
     }
   }
-
-  .burger-trigger-area {
-    color: #ffff;
-    opacity: 0.5;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 0;
-    bottom: 0;
-    right: 10%;
-  }
-
 }
+
+
+.hamburger-menu {
+  opacity: 0;
+  transition: 0.5s;
+  background-color: #2d6e70;
+  width: 100vw;
+  height: 100vh;
+  z-index: 13;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20% 0;
+  top: 0;
+  right: -100vw;
+  .logo {
+    border-right: none;
+    padding-right: 0;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  li {
+    padding-bottom: 15px;
+    text-align: center;
+    margin: auto;
+  }
+  li a {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $montserratregular;
+    font-size: 12px;
+    color: #fff;
+  }
+  .hamburger-btn-start {
+    display: flex;
+    align-items: center;
+  }
+  .hamburger-header-menu-phone {
+    display: block;
+    margin: 0 auto;
+    &::before {
+      display: none;
+      span {
+        padding-left: 0;
+      }
+    }
+  }
+}
+.visible {
+  opacity: 1;
+  right: -0;
+}
+
+
 
 .header-body {
   height: 575px;
@@ -177,5 +207,35 @@ header {
 }
 
 @media (max-width: 768px) {
+  header {
+    .container {
+      height: 500px;
+    }
+  }
+  .site-menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
 
+
+@media (max-width: 480px) {
+  .header-menu {
+    .logo {
+      margin-right: auto;
+    }
+  }
+  .header-menu-phone {
+    display: none;
+  }
+  .header-body {
+    h2 {
+    font-size: 30px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
 }

@@ -20,8 +20,12 @@
 
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
-  <link rel="stylesheet" href="styles/sections/_pricing-section.scss">
-  <!-- endbuild -->
+
+
+  <!-- Burger menu -->
+  <link href="dist/hamburgers.css" rel="stylesheet">
+
+
 </head>
 <body>
 
@@ -64,32 +68,53 @@
         </a>
       </div>
 
-      <div class="pie-menu">
-        <div class="burger"></div>
-        <div class="burger-trigger-area"></div>
-        <ul class="burger-list">
-          <li class="">
-            <a href="#">
-              Home
-            </a>
-          </li>
-          <li class="">
-            <a href="#">
-              About Us
-            </a>
-          </li>
-          <li class="">
-            <a href="#">
-              pricing
-            </a>
-          </li>
-          <li class="">
-            <a href="#">
-              Contact Us
-            </a>
-          </li>
-        </ul>
-      </div>
+
+      <button class="hamburger hamburger--elastic " type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+      </button>
+
+      <ul class="hamburger-menu">
+        <li>
+          <a href="#" class="logo">
+            WAPIK
+          </a>
+        </li>
+        <li class="">
+          <a href="#">
+            Home
+          </a>
+        </li>
+        <li class="">
+          <a href="#">
+            About Us
+          </a>
+        </li>
+        <li class="">
+          <a href="#">
+            pricing
+          </a>
+        </li>
+        <li class="">
+          <a href="#">
+            Contact Us
+          </a>
+        </li>
+        <li>
+          <a href="#" class="btn-start hamburger-btn-start">
+            Get Started
+          </a>
+        </li>
+        <li>
+          <div class="header-menu-phone hamburger-header-menu-phone">
+      <span>
+          +62 202 373 01234
+        </span>
+          </div>
+        </li>
+      </ul>
+
 
     </div>
     <div class="header-body">
@@ -563,12 +588,14 @@ Built with High Attention to Details
   ga('send', 'pageview');
 </script>
 
+
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="/bower_components/modernizr/modernizr.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
+<script src="scripts/humburger.js"></script>
 
 <!-- build:js scripts/plugins.js -->
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
