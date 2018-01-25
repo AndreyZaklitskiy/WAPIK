@@ -28,7 +28,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
   h6 {
     font-size: 13px;
     font-family: $robotomedium;
@@ -55,7 +54,6 @@
       color: $headers-color;
     }
   }
-
   .newsletter-form {
     width: 250px;
     display: flex;
@@ -91,7 +89,6 @@
     }
   }
 }
-
 .footer-social {
   height: 65px;
   display: flex;
@@ -146,10 +143,6 @@
     }
   }
 }
-
-
-
-
 @media (max-width: 480px) {
   .footer-margin {
     text-align: center;

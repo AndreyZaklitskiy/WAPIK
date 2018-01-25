@@ -10,7 +10,6 @@
     justify-content: flex-start;
   }
 }
-
 .attention-section-content {
   display: flex;
   justify-content: flex-start;
@@ -25,7 +24,6 @@
     line-height: 24px;
   }
 }
-
 .attention-section-image {
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -36,16 +34,11 @@
   position: absolute;
   right: -10%;
 }
-
-
-
-
 @media (max-width: 1200px) {
   .attention-section-image {
     opacity: 0.5;
   }
 }
-
 @media (max-width: 768px) {
   .attention-section {
     .container {

@@ -26,7 +26,6 @@
     text-align: center;
   }
 }
-
 .features-block-1 {
   position: relative;
   display: flex;
@@ -77,7 +76,6 @@
     @include sprite($sketch-icon);
   }
 }
-
 .features-block-2 {
   position: relative;
   display: flex;
@@ -85,7 +83,6 @@
   justify-content: center;
   margin-top: 20px;
 }
-
 .feature-2 {
   width: 40%;
   margin-bottom: 60px;
@@ -97,12 +94,10 @@
     text-align: left;
   }
 }
-
 .features-block-2-header {
   display: flex;
   align-items: center;
 }
-
 .feature2-1 {
   &:before {
     content: '';
@@ -135,7 +130,6 @@
     margin-right: 20px;
   }
 }
-
 .line-block {
   .bottom-line {
     display: flex;
@@ -149,10 +143,6 @@
     }
   }
 }
-
-
-
-
 @media (max-width: 768px) {
   .features-section .container {
     padding-top: 45px;

@@ -51,7 +51,6 @@
     }
   }
 }
-
 .pricing-plan-block {
   display: flex;
   justify-content: center;
@@ -60,7 +59,6 @@
   border: 1px solid #c1d3d2;
   margin: 0 auto 80px;
 }
-
 .plan-block-items {
   border-right: 1px solid #c1d3d2;
   height: 360px;
@@ -111,7 +109,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   .check-mark {
     display: flex;
     align-items: center;
@@ -126,20 +123,12 @@
     }
   }
 }
-
-
-
-
-
 @media (max-width: 768px) {
   .pricing-check-block {
     justify-content: center;
     flex-direction: column;
   }
 }
-
-
-
 @media (max-width: 575px) {
   .pricing-section {
     .container {

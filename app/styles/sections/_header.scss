@@ -22,7 +22,6 @@ header {
     background-color: #2d6e70;
   }
 }
-
 .header-menu {
   display: flex;
   align-items: center;
@@ -40,7 +39,6 @@ header {
     border-right: 1px solid #fff;
   }
 }
-
 .header-menu-phone {
   margin-right: auto;
   position: relative;
@@ -60,7 +58,6 @@ header {
     @include sprite($phone);
   }
 }
-
 .site-menu {
   display: flex;
   align-items: center;
@@ -72,19 +69,18 @@ header {
       font-family: $montserratregular;
       font-size: 12px;
       color: #fff;
+      transition: 0.5s;
       &:hover {
         color: $txt-color;
       }
     }
   }
-
 }
 .btn-start {
   @extend .btn;
   height: 32px;
   width: 110px;
 }
-
 .hamburger {
   z-index: 15;
   position: fixed;
@@ -100,8 +96,6 @@ header {
     }
   }
 }
-
-
 .hamburger-menu {
   opacity: 0;
   transition: 0.5s;
@@ -155,9 +149,6 @@ header {
   opacity: 1;
   right: -0;
 }
-
-
-
 .header-body {
   height: 575px;
   display: flex;
@@ -197,7 +188,6 @@ header {
     }
   }
 }
-
 @media (max-width: 992px) {
   .site-menu {
     .header-menu-item {
@@ -205,7 +195,6 @@ header {
     }
   }
 }
-
 @media (max-width: 768px) {
   header {
     .container {
@@ -219,8 +208,6 @@ header {
     display: block;
   }
 }
-
-
 @media (max-width: 480px) {
   .header-menu {
     .logo {

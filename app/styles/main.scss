@@ -41,7 +41,6 @@ html {
   height: 100vh;
   overflow-x: hidden;
 }
-
 body {
   display: flex;
   position: relative;
@@ -50,7 +49,6 @@ body {
   min-height: 100%;
   line-height: 1.2;
 }
-
 p {
   font-size: 14px;
   font-family: $robotoregular;
@@ -58,14 +56,12 @@ p {
   line-height: 150%;
   display: inline-block;
 }
-
 .span-header {
   display: block;
   font-family: $robotolight;
   font-size: 32px;
   color: $headers-color;
 }
-
 .btn {
   display: flex;
   align-items: center;
@@ -76,8 +72,8 @@ p {
   font-family: $montserratregular;
   font-size: 12px;
   border-radius: 2px;
+  transition: 0.5s;
   &:hover {
     background-color: $green;
   }
 }
-
