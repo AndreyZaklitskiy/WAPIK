@@ -99,6 +99,9 @@
     width: 140px;
     height: 40px;
     margin: 0 auto;
+    &:hover {
+      animation: swing 0.4s;
+    }
   }
   &:last-child {
     border-right: none;

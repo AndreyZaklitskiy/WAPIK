@@ -77,3 +77,43 @@ p {
     background-color: $green;
   }
 }
+
+
+
+@keyframes swing {
+  20% {
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    -o-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  40% {
+    -webkit-transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    -o-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  60% {
+    -webkit-transform: translateX(3px);
+    -moz-transform: translateX(3px);
+    -ms-transform: translateX(3px);
+    -o-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  80% {
+    -webkit-transform: -3px;
+    -moz-transform: -3px;
+    -ms-transform: -3px;
+    -o-transform: -3px;
+    transform: -3px;
+  }
+  100% {
+    -webkit-transform: 0;
+    -moz-transform: 0;
+    -ms-transform: 0;
+    -o-transform: 0;
+    transform: 0;
+  }
+}

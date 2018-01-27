@@ -22,6 +22,7 @@ header {
     background-color: #2d6e70;
   }
 }
+
 .header-menu {
   display: flex;
   align-items: center;
@@ -39,6 +40,7 @@ header {
     border-right: 1px solid #fff;
   }
 }
+
 .header-menu-phone {
   margin-right: auto;
   position: relative;
@@ -58,6 +60,7 @@ header {
     @include sprite($phone);
   }
 }
+
 .site-menu {
   display: flex;
   align-items: center;
@@ -76,11 +79,13 @@ header {
     }
   }
 }
+
 .btn-start {
   @extend .btn;
   height: 32px;
   width: 110px;
 }
+
 .hamburger {
   z-index: 15;
   position: fixed;
@@ -96,6 +101,7 @@ header {
     }
   }
 }
+
 .hamburger-menu {
   opacity: 0;
   transition: 0.5s;
@@ -145,10 +151,12 @@ header {
     }
   }
 }
+
 .visible {
   opacity: 1;
   right: -0;
 }
+
 .header-body {
   height: 575px;
   display: flex;
@@ -185,9 +193,11 @@ header {
     border-radius: 2px;
     &:hover {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      animation: swing 0.8s;
     }
   }
 }
+
 @media (max-width: 992px) {
   .site-menu {
     .header-menu-item {
@@ -195,6 +205,7 @@ header {
     }
   }
 }
+
 @media (max-width: 768px) {
   header {
     .container {
@@ -208,6 +219,7 @@ header {
     display: block;
   }
 }
+
 @media (max-width: 480px) {
   .header-menu {
     .logo {
@@ -219,7 +231,7 @@ header {
   }
   .header-body {
     h2 {
-    font-size: 30px;
+      font-size: 30px;
     }
     p {
       font-size: 14px;
